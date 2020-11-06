@@ -135,16 +135,51 @@
                 <!-- ============================================================== -->
                 <!-- pageheader  -->
                 <!-- ============================================================== -->
-                <h1>Task Assign</h1>
+                <h2>Task Assign</h2>
                 <!-- ============================================================== -->
                 <!-- end pageheader  -->
                 <!-- ============================================================== -->
-            </div>
-            <div class="container-fluid dashboard-content">
-                <!-- ============================================================== -->
-                <!-- pageheader  -->
-                <!-- ============================================================== -->
-                <h1>Task List</h1>
+                <!-- Task Status Form -->
+
+                <!-- SELECT -->
+                <div class="form-group" >
+                    <div class="w-50"
+                    <label for="project">Project</label>
+                    <select class="form-control" id="project">
+                        <option>Select</option>
+                        <option>PRS001 Human Resources</option>
+                        <option>PRS002 Infrastructure </option>
+                        <option>PRS003 System Upgrade</option>
+                    </select>
+                    <!-- SELECT -->
+                    <div class="form-group">
+                        <label for="employee">Assigned Employee</label>
+                        <select class="form-control" id="employee">
+                            <option>Select</option>
+                            <option>Anna Smith</option>
+                            <option>Daniel Norre </option>
+                            <option>Tom White</option>
+                        </select>
+                        <div class="form-group">
+                            <label for="task-subject">Task Subject</label>
+                            <input class="form-control form-control-sm" type="text" id="task-subject">
+                        </div>
+                        <!-- TEXTAREA -->
+                        <div class="form-group">
+                            <label for="details">Details</label>
+                            <textarea class="form-control" id="details" rows="3"></textarea>
+                        </div>
+                        <!---SAVE BUTTON -->
+                        <a href="#" class="btn btn-success">Save</a>
+                    </div>
+                    <!-- End of Task Status Form  -->
+                    <!-- ============================================================== -->
+                </div>
+                <div class="container-fluid dashboard-content">
+                    <!-- ============================================================== -->
+                    <!-- pageheader  -->
+                    <!-- ============================================================== -->
+                <h2>Task List</h2>
                 <!-- ============================================================== -->
                 <!-- end pageheader  -->
                 <!-- ============================================================== -->
