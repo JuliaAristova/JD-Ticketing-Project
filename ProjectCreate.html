@@ -141,6 +141,66 @@
                 <!-- ============================================================== -->
                 <!-- end pageheader  -->
                 <!-- ============================================================== -->
+                <div class="form-group" >
+                    <div class="w-50">
+
+                        <div class="form-group">
+                            <label for="projectName">Project Name</label>
+                            <input class="form-control form-control-sm" type="text" id="projectName">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="projectCode">Project Code</label>
+                            <input class="form-control form-control-sm" type="text" id="projectCode">
+                        </div>
+
+                        <!-- SELECT -->
+                        <div class="form-group">
+                            <label for="manager">Assigned Manager</label>
+                            <select class="form-control" id="manager">
+                                <option>Select</option>
+                                <option>Anna Smith</option>
+                                <option>Daniel Norre </option>
+                                <option>Tom White</option>
+                            </select>
+
+                            <!-- DATE PICKER START-->
+                            <div class="card-body border-top w-25">
+                                <h5>Peoject Start</h5>
+                                <div class="form-group">
+                                    <div class="input-group date" id="startDate" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" />
+                                        <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                            <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- DATE PICKER END-->
+                                <h5>Project End</h5>
+                                <div class="form-group">
+                                    <div class="input-group date" id="endDate" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" />
+                                        <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                            <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- TEXTAREA -->
+                            <div class="form-group">
+                                <label for="details">Details</label>
+                                <textarea class="form-control" id="details" rows="3"></textarea>
+                            </div>
+                            <!---SAVE BUTTON -->
+                            <a href="#" class="btn btn-success">Save</a>
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- End of Task Status Form  -->
+                        <!-- ============================================================== -->
+
             </div>
             <div class="container-fluid dashboard-content">
                 <!-- ============================================================== -->
