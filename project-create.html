@@ -37,6 +37,14 @@
             rel="stylesheet"
             href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css"
     />
+
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/css/style.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+
+
     <title>Project Create</title>
 </head>
 
@@ -248,14 +256,16 @@
                                 <option>Tom White</option>
                             </select>
 
+                            </div>
+
                             <!-- DATE PICKER START-->
                                 <div class="row">
                                     <div class="col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <label for="startDate" class="col-form-label">Project Start</label>
-                                            <div class="input-group date" id="startDate" data-target-input="nearest">
-                                                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" />
-                                                <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                            <label for="datetimepicker4">Project Start</label>
+                                            <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                                                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" />
+                                                <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
                                                     <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
                                                 </div>
                                             </div>
@@ -264,18 +274,17 @@
 
                                     <div class="col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <label for="endDate" class="col-form-label">Project End</label>
-                                            <div class="input-group date" id="endDate" data-target-input="nearest">
+                                            <label for="datetimepicker4">Project End</label>
+                                            <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
                                                 <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" />
                                                 <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
                                                     <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
                                                 </div>
                                             </div>
-                                        </div>
                                     </div>
                                 </div>
-
-                            <!-- DATE PICKER END -->
+                                </div>
+                                <!-- DATE PICKER END -->
 
                             <div class="form-group">
                                 <label for="details">Details</label>
@@ -385,6 +394,15 @@
 <script src="assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
 <script src="assets/vendor/charts/c3charts/C3chartjs.js"></script>
 <script src="assets/libs/js/dashboard-ecommerce.js"></script>
+
+<!-- Optional JavaScript -->
+<script src="../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="../assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+<script src="../assets/libs/js/main-js.js"></script>
+<script src="../assets/vendor/datepicker/moment.js"></script>
+<script src="../assets/vendor/datepicker/tempusdominus-bootstrap-4.js"></script>
+<script src="../assets/vendor/datepicker/datepicker.js"></script>
 </body>
 </html>
 
