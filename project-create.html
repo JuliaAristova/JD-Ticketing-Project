@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -35,7 +37,7 @@
             rel="stylesheet"
             href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css"
     />
-    <title>User Create - User List</title>
+    <title>Project Create</title>
 </head>
 
 <body>
@@ -135,7 +137,13 @@
                 <!-- ============================================================== -->
                 <!-- pageheader  -->
                 <!-- ============================================================== -->
-                <h2>User Create</h2>
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="page-header" id="top">
+                            <h2 class="pageheader-title">Project Create</h2>
+                        </div>
+                    </div>
+                </div>
                 <!-- ============================================================== -->
                 <!-- end pageheader  -->
                 <!-- ============================================================== -->
@@ -143,60 +151,68 @@
                     <div class="w-50">
 
                         <div class="form-group">
-                            <label for="firstName">First Name</label>
-                            <input class="form-control form-control-sm" type="text" id="firstName">
+                            <label for="projectName">Project Name</label>
+                            <input class="form-control form-control-sm" type="text" id="projectName">
+                        </div>
 
-                            <label for="lastName">Last Name</label>
-                            <input class="form-control form-control-sm" type="text" id="lastName">
-
-                            <label for="inputEmail">Email address</label>
-                            <input id="inputEmail" type="email" placeholder="name@example.com" class="form-control">
-
-                            <label for="inputPassword">Password</label>
-                            <input id="inputPassword" type="password" placeholder="Password" class="form-control">
-
-                            <label for="confirmPassword">Password Confirmation</label>
-                            <input id="confirmPassword" type="password" placeholder="re-enter password" class="form-control">
-
-                            <label>Phone <small class="text-muted">(999) 999-9999</small></label>
-                            <input type="text" class="form-control phone-inputmask" id="phone-mask" placeholder="">
-
-
-                            <h5>Gender</h5>
-                            <label class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" name="radio-inline" checked="" class="custom-control-input"><span class="custom-control-label">Male</span>
-                            </label>
-                            <label class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" name="radio-inline" class="custom-control-input"><span class="custom-control-label">Female</span>
-                            </label>
+                        <div class="form-group">
+                            <label for="projectCode">Project Code</label>
+                            <input class="form-control form-control-sm" type="text" id="projectCode">
                         </div>
 
                         <!-- SELECT -->
                         <div class="form-group">
-                            <label for="role">Role</label>
-                            <select class="form-control" id="role">
+                            <label for="manager">Assigned Manager</label>
+                            <select class="form-control" id="manager">
                                 <option>Select</option>
-                                <option>Manager</option>
-                                <option>Admin</option>
-                                <option>Developer </option>
-                                <option>SDET</option>
+                                <option>Anna Smith</option>
+                                <option>Daniel Norre </option>
+                                <option>Tom White</option>
                             </select>
-                        </div>
-                    </div>
-                    <!---SAVE BUTTON -->
-                    <a href="#" class="btn btn-success">Save</a>
-                </div>
-                <!-- ============================================================== -->
-                <!-- End of Task Status Form  -->
-                <!-- ============================================================== -->
 
+                            <!-- DATE PICKER START-->
+                            <div class="card-body border-top w-50">
+                                <h5>Peoject Start</h5>
+                                <div class="form-group">
+                                    <div class="input-group date" id="startDate" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" />
+                                        <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                            <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- DATE PICKER END-->
+                                <h5>Project End</h5>
+                                <div class="form-group">
+                                    <div class="input-group date" id="endDate" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" />
+                                        <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                            <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- TEXTAREA -->
+                            <div class="form-group">
+                                <label for="details">Details</label>
+                                <textarea class="form-control" id="details" rows="3"></textarea>
+                            </div>
+                            <!---SAVE BUTTON -->
+                            <a href="#" class="btn btn-success">Save</a>
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- End of Task Status Form  -->
+                        <!-- ============================================================== -->
 
             </div>
             <div class="container-fluid dashboard-content">
                 <!-- ============================================================== -->
                 <!-- pageheader  -->
                 <!-- ============================================================== -->
-                <h2>User List</h2>
+                <h1>Project List</h1>
                 <!-- ============================================================== -->
                 <!-- end pageheader  -->
                 <!-- ============================================================== -->
@@ -210,46 +226,34 @@
                                 <table class="table table-striped table-bordered first">
                                     <thead>
                                     <tr>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">E-Mail(username)</th>
-                                        <th scope="col">Gender</th>
-                                        <th scope="col">Phone</th>
-                                        <th scope="col">Role</th>
+                                        <th scope="col">Project Code</th>
+                                        <th scope="col">Project Name)</th>
+                                        <th scope="col">Start / End Date</th>
+                                        <th scope="col">Manager</th>
+                                        <th scope="col">Status</th>
                                         <th scope="col">Action</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <th scope="row">John Kesy</th>
-                                        <td>admin@cybertek.com</td>
-                                        <td>Male</td>
-                                        <td>7652345644</td>
-                                        <td>Admin</td>
-                                        <td><a href="#" class="btn btn-brand">Update</a><a href="#" class="btn btn-danger">Delete</a></td>
+                                        <th scope="row">PRJ001</th>
+                                        <td>Human Resources CRM</td>
+                                        <td>11.03.2020 - 11.09.2020</td>
+                                        <td>Delisa Norre</td>
+                                        <td>In Progress</td>
+                                        <td><a href="#" class="btn btn-brand">Update</a>
+                                            <a href="#" class="btn btn-danger">Delete</a>
+                                            <a href="#" class="btn btn-primary">Complete</a></td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">Anna Smith</th>
-                                        <td>manager@cybertek.com</td>
-                                        <td>Female</td>
-                                        <td>5723332122</td>
-                                        <td>Manager</td>
-                                        <td><a href="#" class="btn btn-brand">Update</a><a href="#" class="btn btn-danger">Delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">John Alan</th>
-                                        <td>jalan@cybertek.com</td>
-                                        <td>Male</td>
-                                        <td>7023454322</td>
-                                        <td>Employee</td>
-                                        <td><a href="#" class="btn btn-brand">Update</a><a href="#" class="btn btn-danger">Delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Tom Clain</th>
-                                        <td>tclain@cybertek.com</td>
-                                        <td>Male</td>
-                                        <td>5712234411</td>
-                                        <td>Employee</td>
-                                        <td><a href="#" class="btn btn-brand">Update</a><a href="#" class="btn btn-danger">Delete</a></td>
+                                        <th scope="row">PRJ002</th>
+                                        <td>Infra Upgrade</td>
+                                        <td>11.03.2020 - 11.06.2020</td>
+                                        <td>Craig Jark</td>
+                                        <td>UAT Testing</td>
+                                        <td><a href="#" class="btn btn-brand">Update</a>
+                                            <a href="#" class="btn btn-danger">Delete</a>
+                                            <a href="#" class="btn btn-primary">Complete</a></td>
                                     </tr>
                                     </tbody>
                                     <tfoot>
@@ -298,3 +302,5 @@
 <script src="assets/libs/js/dashboard-ecommerce.js"></script>
 </body>
 </html>
+
+
